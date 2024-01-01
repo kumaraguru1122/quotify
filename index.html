@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="grid grid-rows-[10vh_90vh]">
+      <header class="bg-slate-950">
+        <h1 class="text-teal-500 text-3xl font-bold pt-2 px-4 md:pt-5 md:px-10">Quotify</h1>
+      </header>
+      <main class="bg-slate-950 text-gray-200 grid place-content-center">
+        <div class="flex flex-col border-2 m-2 rounded-xl p-4 relative">
+          <div class="relative">
+            <span class="absolute left-2 top-1"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="2em"
+                viewBox="0 0 448 512"
+                class="fill-purple-500"
+              >
+                <path
+                  d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z"
+                />
+              </svg>
+            </span>
+            <p
+              class="text-xl md:text-3xl m-8 md:m-10 max-w-[30ch] text-center"
+              id="quote"
+            ></p>
+            <span class="absolute right-2 bottom-1"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="2em"
+                viewBox="0 0 448 512"
+                class="fill-purple-500"
+              >
+                <path
+                  d="M448 296c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H320c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72zm-256 0c0 66.3-53.7 120-120 120H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72z"
+                />
+              </svg>
+            </span>
+          </div>
+          <button id="copy-quote" class="absolute bottom-3 text-lg font-bold text-rose-500">copy</button>
+          <p
+            class="self-end italic text-xl m-2 text-yellow-300"
+            id="author"
+          ></p>
+        </div>
+        <button
+          type="button"
+          id="new-quote"
+          class="text-white mx-auto mt-4 bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+        >
+          New quote
+        </button>
+      </main>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
