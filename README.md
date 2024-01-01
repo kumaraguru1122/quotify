@@ -1,7 +1,7 @@
 # Quotify - Quote Generator 
 Quotify is a simple, elegant JavaScript application that fetches random quotes from an API and allows the user to copy the quote to their clipboard.
 
-## Screenshot [live site link]()
+## Screenshot [live site link](https://kumaraguru1122.github.io/quotify/)
 
 ## Features
 - Fetches random quotes from the Quotable API
